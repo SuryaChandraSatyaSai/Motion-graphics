@@ -1,0 +1,17 @@
+{
+  "name": "codebasics-motion",
+  "private": true,
+  "type": "module",
+  "description": "Codebasics motion-graphics pipeline (Claude Code + HyperFrames). Setup: SETUP_NEW_PC.md",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "theme": "node engines/hyperframes/scripts/theme-css.mjs",
+    "chrome": "npx --yes @puppeteer/browsers@2 install chrome@144.0.7559.96 --path .cache/puppeteer",
+    "setup:check": "node scripts/setup-check.mjs"
+  },
+  "dependencies": {
+    "puppeteer-core": "25.13.0"
+  }
+}
